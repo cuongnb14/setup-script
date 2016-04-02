@@ -4,3 +4,4 @@ echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" | sudo tee /etc
 sudo apt-get update
 apt-cache policy docker-engine
 sudo apt-get install docker-engine=1.9.1-0~trusty
+sudo usermod -aG docker `whoami`
